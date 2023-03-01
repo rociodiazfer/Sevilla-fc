@@ -48,7 +48,7 @@ public class JugadorFileLocalDataSource {
     public Jugador findById(Integer idJugador) {
         List<Jugador> jugadores = findAll();
         for (Jugador jugador : jugadores) {
-            if (Objects.equals(jugador.getIdJugador(), idJugador)) {
+            if (Objects.equals(jugador.getId(), idJugador)) {
                 return jugador;
             }
         }
@@ -71,6 +71,7 @@ public class JugadorFileLocalDataSource {
         }
         return new ArrayList<Jugador>();
     }
+
 
     public static JugadorFileLocalDataSource getInstance() {
         if (instance == null) {

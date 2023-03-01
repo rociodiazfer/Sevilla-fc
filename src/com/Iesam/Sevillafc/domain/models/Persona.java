@@ -12,6 +12,7 @@ public class Persona {
     protected String surname;
     protected Date date;
 
+
     public Integer getId() {
         return id;
     }
@@ -44,8 +45,4 @@ public class Persona {
         this.date = date;
     }
 
-    @Override
-    public String toString() {
-        return new Gson().toJson(this);
-    }
 }
